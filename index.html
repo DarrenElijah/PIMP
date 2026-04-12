@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pro Insulation Managing Partners | Oilfield Insulation</title>
+  <title>Pro Insulation Managing Partners | Industrial Insulation</title>
   <meta
     name="description"
-    content="Pro Insulation Managing Partners provides industrial and oilfield insulation services with experienced crews, quality workmanship, and dependable project execution."
+    content="Pro Insulation Managing Partners provides industrial insulation services with experienced crews, quality workmanship, and dependable project execution."
   />
+  <meta name="theme-color" content="#0a0d10" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,37 +18,56 @@
   <link rel="stylesheet" href="pro_style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scrollProgressBar"></span>
+  </div>
+
+  <noscript>
+    <div class="noscript-banner">
+      JavaScript is turned off, so the menu, gallery viewer, and quote form enhancements will be limited.
+    </div>
+  </noscript>
+
   <header class="site-header">
     <div class="container nav">
       <a href="#home" class="logo" aria-label="Pro Insulation Managing Partners home">
-        <span class="logo-mark">P</span>
+        <span class="logo-mark" aria-hidden="true">P</span>
         <span class="logo-text">
           <strong>Pro Insulation Managing Partners</strong>
-          <small>Industrial &amp; Oilfield Insulation</small>
+          <small>Industrial Insulation</small>
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        ☰
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span aria-hidden="true">☰</span>
       </button>
 
-      <nav class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#why-insulate">Why Insulate</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact" class="btn btn-sm">Contact Info</a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#services" data-scroll-link>Services</a>
+        <a href="#why-insulate" data-scroll-link>Why Insulate</a>
+        <a href="#about" data-scroll-link>About</a>
+        <a href="#gallery" data-scroll-link>Gallery</a>
+        <a href="#contact" class="btn btn-sm" data-scroll-link>Contact Info</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
+  <main id="main-content" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Oilfield Insulation Experts</p>
-          <h1>Built for performance, safety, and long-term protection.</h1>
+        <div class="hero-content reveal-on-scroll is-visible">
+          <p class="eyebrow">Industrial Insulation Experts</p>
+          <h1 id="hero-title">Built for performance, safety, and long-term protection.</h1>
           <p class="hero-text">
             Pro Insulation Managing Partners delivers high-quality insulation solutions for industrial facilities,
             piping systems, vessels, exchangers, towers, terminals, and instrumentation access points.
@@ -58,16 +78,16 @@
             <a href="#gallery" class="btn btn-secondary">View Our Work</a>
           </div>
 
-          <div class="hero-points">
+          <div class="hero-points" aria-label="Company highlights">
             <span>12+ Years Industry Experience</span>
             <span>Operating Together for 8 Years</span>
             <span>Field-Tested Crews</span>
           </div>
         </div>
 
-        <aside class="hero-card">
+        <aside class="hero-card reveal-on-scroll is-visible" aria-label="Why clients choose us">
           <div class="card">
-            <h3>Why clients choose us</h3>
+            <h2 class="card-title">Why clients choose us</h2>
             <ul>
               <li>Experienced crews with strong field and fabrication knowledge</li>
               <li>Insulation systems designed for safety, access, and thermal performance</li>
@@ -79,7 +99,7 @@
       </div>
     </section>
 
-    <section class="section stats-bar">
+    <section class="section stats-bar reveal-on-scroll" aria-label="Company stats">
       <div class="container stats-grid">
         <div>
           <strong>8+ Years</strong>
@@ -100,11 +120,11 @@
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section reveal-on-scroll" id="services" aria-labelledby="services-title">
       <div class="container">
         <div class="section-heading narrow">
           <p class="eyebrow">Who We Are</p>
-          <h2>Insulation crews equipped for projects of any size.</h2>
+          <h2 id="services-title">Insulation crews equipped for projects of any size.</h2>
           <p>
             Operating together for 8 years, our insulation team possesses the expertise to successfully execute projects ranging
             from insulation access boxes for instrumentation to full insulation packages for vessels, exchangers, terminals, towers,
@@ -134,18 +154,18 @@
             <p>Scalable execution with multiple crews available for complete facility insulation scopes.</p>
           </article>
           <article class="service-card">
-            <h3>Removable Covers</h3>
+            <h3>Removable blankets</h3>
             <p>Custom removable insulation solutions that provide protection while preserving access to components.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="why-insulate">
+    <section class="section section-dark reveal-on-scroll" id="why-insulate" aria-labelledby="why-insulate-title">
       <div class="container split-grid">
         <div>
           <p class="eyebrow">Why Insulate?</p>
-          <h2>Protection, efficiency, and operational reliability.</h2>
+          <h2 id="why-insulate-title">Protection, efficiency, and operational reliability.</h2>
           <div class="check-list">
             <div>
               <strong>Protects facility integrity</strong>
@@ -162,20 +182,20 @@
           </div>
         </div>
 
-        <div class="image-panel tall">
-          <img src="PIMP_photos/image5.png" alt="Insulated process equipment with removable covers and access points" />
+        <div class="image-panel tall tech-frame">
+          <img src="PIMP_photos/image5.png" alt="Insulated process equipment with removable blankets and access points" />
         </div>
       </div>
     </section>
 
-    <section class="section" id="what-we-insulate">
+    <section class="section reveal-on-scroll" id="what-we-insulate" aria-labelledby="what-we-insulate-title">
       <div class="container split-grid reverse-mobile">
-        <div class="image-panel">
+        <div class="image-panel tech-frame">
           <img src="PIMP_photos/image3.png" alt="Insulated industrial piping in an operating facility" />
         </div>
         <div>
           <p class="eyebrow">What We Insulate</p>
-          <h2>Solutions for critical operating environments.</h2>
+          <h2 id="what-we-insulate-title">Solutions for critical operating environments.</h2>
           <p>
             Our insulation solutions are designed for crucial components, equipment, and piping that keep facilities operating safely
             while decreasing operating costs, protecting against asset degradation, and mitigating integrity risks.
@@ -187,18 +207,18 @@
             <span>Terminals</span>
             <span>Towers</span>
             <span>Instrumentation</span>
-            <span>Removable Covers</span>
+            <span>Removable blankets</span>
             <span>Full Facility Projects</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt-section" id="comparison">
+    <section class="section alt-section reveal-on-scroll" id="comparison" aria-labelledby="comparison-title">
       <div class="container split-grid">
         <div>
           <p class="eyebrow">Us vs. Them</p>
-          <h2>Quality that looks right and performs right.</h2>
+          <h2 id="comparison-title">Quality that looks right and performs right.</h2>
           <p>
             Our insulation teams take pride in the quality of their work. Our finished product is not only aesthetically attractive,
             but also properly designed, fitted, and installed to achieve measurable performance in the field.
@@ -222,17 +242,17 @@
             </div>
           </div>
         </div>
-        <div class="image-panel">
+        <div class="image-panel tech-frame">
           <img src="PIMP_photos/USvsTHEM.png" alt="Comparison collage showing insulation workmanship examples" />
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="about">
+    <section class="section section-dark reveal-on-scroll" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
         <div>
           <p class="eyebrow">About the Owner</p>
-          <h2>Meet Jamie Russell</h2>
+          <h2 id="about-title">Meet Jamie Russell</h2>
           <p>
             Jamie Russell has over 12 years of experience in the oil and gas industry. She began her career with a midstream contractor,
             spending nine years in pipeline construction, facilities installation, and industrial insulation before taking ownership of
@@ -266,72 +286,157 @@
       </div>
     </section>
 
-    <section class="section" id="gallery">
+    <section class="section reveal-on-scroll" id="gallery" aria-labelledby="gallery-title">
       <div class="container">
         <div class="section-heading narrow">
           <p class="eyebrow">Project Gallery</p>
-          <h2>Examples of our insulation work.</h2>
+          <h2 id="gallery-title">Examples of our insulation work.</h2>
         </div>
 
         <div class="gallery-grid">
-          <button class="gallery-item" data-image="PIMP_photos/image2.png" data-caption="Instrument access insulation cover">
-            <img src="PIMP_photos/image2.png" alt="Instrument access insulation cover" />
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image2.png"
+            data-caption="Instrument access insulation blanket"
+            aria-label="Open large image: Instrument access insulation blanket"
+          >
+            <img src="PIMP_photos/image2.png" alt="Instrument access insulation blanket" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image4.png" data-caption="Insulated horizontal piping and vessels">
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image4.png"
+            data-caption="Insulated horizontal piping and vessels"
+            aria-label="Open large image: Insulated horizontal piping and vessels"
+          >
             <img src="PIMP_photos/image4.png" alt="Insulated horizontal piping and vessels" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image3.png" data-caption="Reflective insulated piping in plant">
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image3.png"
+            data-caption="Reflective insulated piping in plant"
+            aria-label="Open large image: Reflective insulated piping in plant"
+          >
             <img src="PIMP_photos/image3.png" alt="Reflective insulated piping in plant" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image5.png" data-caption="Removable insulation cover with instrumentation access">
-            <img src="PIMP_photos/image5.png" alt="Removable insulation cover with instrumentation access" />
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image5.png"
+            data-caption="Removable insulation blanket with instrumentation access"
+            aria-label="Open large image: Removable insulation blanket with instrumentation access"
+          >
+            <img src="PIMP_photos/image5.png" alt="Removable insulation blanket with instrumentation access" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image7.png" data-caption="Fabricated insulated vessel in shop">
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image7.png"
+            data-caption="Fabricated insulated vessel in shop"
+            aria-label="Open large image: Fabricated insulated vessel in shop"
+          >
             <img src="PIMP_photos/image7.png" alt="Fabricated insulated vessel in shop" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image8.png" data-caption="Insulated vessel and piping systems outdoors">
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image8.png"
+            data-caption="Insulated vessel and piping systems outdoors"
+            aria-label="Open large image: Insulated vessel and piping systems outdoors"
+          >
             <img src="PIMP_photos/image8.png" alt="Insulated vessel and piping systems outdoors" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image9.png" data-caption="Vertical insulated pipe and removable cover">
-            <img src="PIMP_photos/image9.png" alt="Vertical insulated pipe and removable cover" />
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image9.png"
+            data-caption="Vertical insulated pipe and removable blanket"
+            aria-label="Open large image: Vertical insulated pipe and removable blanket"
+          >
+            <img src="PIMP_photos/image9.png" alt="Vertical insulated pipe and removable blanket" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image10.png" data-caption="Insulated pipe elbows and runs">
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image10.png"
+            data-caption="Insulated pipe elbows and runs"
+            aria-label="Open large image: Insulated pipe elbows and runs"
+          >
             <img src="PIMP_photos/image10.png" alt="Insulated pipe elbows and runs" />
           </button>
-          <button class="gallery-item" data-image="PIMP_photos/image11.png" data-caption="Insulated pumps and removable covers">
-            <img src="PIMP_photos/image11.png" alt="Insulated pumps and removable covers" />
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-image="PIMP_photos/image11.png"
+            data-caption="Insulated pumps and removable blankets"
+            aria-label="Open large image: Insulated pumps and removable blankets"
+          >
+            <img src="PIMP_photos/image11.png" alt="Insulated pumps and removable blankets" />
           </button>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+    <section class="section contact-section reveal-on-scroll" id="contact" aria-labelledby="contact-title">
       <div class="container contact-grid">
         <div class="contact-card dark-card">
           <p class="eyebrow">Contact</p>
-          <h2>Talk with Jamie about your next project.</h2>
+          <h2 id="contact-title">Talk with Jamie about your next project.</h2>
           <p>
-            Whether you need removable covers, piping insulation, equipment insulation, or a full facility scope,
+            Whether you need removable blankets, piping insulation, equipment insulation, or a full facility scope,
             Pro Insulation Managing Partners is ready to help.
           </p>
           <div class="contact-details">
             <p><strong>Jamie Russell</strong></p>
             <p><a href="tel:+19033272243">903-327-2243</a></p>
-            <p>Industrial &amp; Oilfield Insulation Services</p>
+            <p>Industrial Insulation Services</p>
           </div>
         </div>
 
         <form class="contact-form" id="contactForm">
           <h3>Request a Quote</h3>
+          <p class="form-helper" id="formHelper">All fields below are required.</p>
 
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            autocomplete="name"
+            required
+          />
 
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your phone number"
+            autocomplete="tel"
+            inputmode="tel"
+            required
+          />
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email address" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          />
 
           <label for="message">Project Details</label>
           <textarea
@@ -339,11 +444,12 @@
             name="message"
             rows="5"
             placeholder="Tell us about your project"
+            aria-describedby="formHelper"
             required
           ></textarea>
 
           <button type="submit" class="btn">Send Inquiry</button>
-          <p class="form-note" id="formNote"></p>
+          <p class="form-note" id="formNote" role="status" aria-live="polite" aria-atomic="true"></p>
         </form>
       </div>
     </section>
@@ -356,11 +462,40 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
-    <img id="lightboxImage" src="" alt="Expanded project image" />
-    <p id="lightboxCaption"></p>
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+  >
+    <div
+      class="lightbox-dialog"
+      id="lightboxDialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightboxTitle"
+      aria-describedby="lightboxCaption"
+      tabindex="-1"
+    >
+      <p id="lightboxTitle" class="sr-only">Project image viewer</p>
+
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">×</button>
+
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">‹</button>
+
+      <figure class="lightbox-figure">
+        <img id="lightboxImage" src="" alt="Expanded project image" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next image">›</button>
+    </div>
   </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    ↑
+  </button>
+
+  <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
   <script
     type="text/javascript"
