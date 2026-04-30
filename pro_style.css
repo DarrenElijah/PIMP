@@ -157,6 +157,14 @@ button {
   gap: 1rem;
 }
 
+.logo-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
 .logo {
   display: flex;
   align-items: center;
