@@ -158,11 +158,14 @@ button {
 }
 
 .logo-img {
-  width: 64px;
-  height: 64px;
+  width: 120px;
+  height: 60px;
   object-fit: contain;
   display: block;
-  border-radius: 10px;
+  border-radius: 22px;
+  background: #fff;
+  padding: 1px;
+  overflow: hidden;
 }
 
 .logo {
